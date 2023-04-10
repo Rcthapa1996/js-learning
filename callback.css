@@ -1,0 +1,12 @@
+ul {
+  background-color: bisque;
+}
+
+li > ul {
+  display: none;
+}
+
+li:hover > ul {
+  display: inline;
+  padding: 100px;
+}

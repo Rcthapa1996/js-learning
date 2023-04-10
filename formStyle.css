@@ -1,0 +1,137 @@
+/* body {
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  border: solid;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+form div input {
+  margin-left: 10px;
+}
+form button {
+  margin-left: 10px;
+} */
+
+ul {
+  border: solid;
+  list-style-type: decimal;
+  padding-left: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+body > ul {
+  width: 400px;
+}
+
+li {
+  padding: 10px;
+}
+li + li {
+  padding-top: 0px;
+}
+
+li:has(+ ul) {
+  position: relative;
+  background-color: #ddd;
+}
+li:has(+ ul):hover {
+  background-color: #aaa;
+}
+
+li:has(+ ul) + ul {
+  background-color: white;
+  transition: all 1s ease-in-out;
+}
+li:has(+ ul):hover + ul {
+  background-color: #afa;
+}
+
+li:has(+ ul):before {
+  content: "🔽";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+li:has(+ ul):hover:before {
+  content: "🔼";
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+/* New Style */
+/* 
+ul {
+  border: solid;
+  list-style-type: decimal;
+  padding-left: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+body > ul {
+  width: 400px;
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+}
+li + li {
+  padding-top: 0px;
+}
+
+li:has(> ul) {
+  position: relative;
+  background-color: #ddd;
+}
+li:has(> ul):hover {
+  background-color: #aaa;
+}
+
+li:has(> ul) > ul {
+  background-color: white;
+  transition: all 1s ease-in-out;
+}
+li:has(> ul):hover > ul {
+  background-color: #afa;
+}
+
+li:has(> ul):before {
+  content: "🔽";
+  font-size: 1.5rem;
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+}
+li:has(> ul):hover:before {
+  content: "🔼";
+  position: absolute;
+  right: 10px;
+  transform: translateY(-50%);
+  top: 50%;
+} */

@@ -1,0 +1,10 @@
+table {
+  border: solid;
+}
+
+thead {
+  background-color: antiquewhite;
+}
+tr:nth-child(even) {
+  background-color: azure;
+}

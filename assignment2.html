@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 2 (20th March 2023)</title>
+</head>
+
+<body>
+    <script src="assignment2.js"></script>
+    <h1>Assignment 2 (20th March 2023)</h1>
+    <ol class="assignment-lists">
+        <li class="list-item">Write a function that takes two numbers as parameters and returns the larger of the two.
+        </li>
+        <li class="list-item">Write a program that prompts the user to enter two numbers and then displays the result of
+            adding, subtracting, multiplying, and dividing the two numbers.</li>
+        </li>
+        <li class="list-item"> Create a program that prompts the user to enter a number and then displays whether that
+            number is positive, negative, or zero.
+        </li>
+        <li class="list-item">Write a function that takes three numbers as input and returns their average.
+        </li>
+        <li class="list-item">Create a program that asks the user to enter a number and then displays whether that
+            number is even or odd.
+        </li>
+        <li class="list-item"> Write a function that takes a number as input and returns true if it is a multiple of 3
+            and false otherwise.
+        </li>
+        <li class="list-item"> Write a program that prompts the user to enter their age and then displays a message that
+            says whether they are a child (under 18), an adult (18-64), or a senior (65 and older).
+        </li>
+        <li class="list-item"> Create a function that takes a number as input and returns the square of that number.
+        </li>
+        <li class="list-item">Create a function that takes two numbers as input and returns the remainder when the
+            larger number is divided by the smaller number.</li>
+        <li class="list-item">Write a function that takes a number as input and returns the sum of all the numbers from
+            1 to that number.</li>
+        <li class="list-item">Write a program that prompts the user to enter a number and then displays the sum of all
+            the even numbers from 1 to that number.</li>
+        <li class="list-item">Write a function that takes a number as input and returns true if it is a prime number and
+            false otherwise.</li>
+        <li class="list-item">Create a program that asks the user to enter a number and then displays the factorial of
+            that number (using the formula n! = n * (n-1) * (n-2) * ... * 1).</li>
+        <li class="list-item">Create a program that prompts the user to enter a temperature in Celsius and then displays
+            the temperature in Fahrenheit (using the formula F = C * 9/5 + 32).</li>
+        <li class="list-item">Create a program that asks the user to enter a year and then displays whether that year is
+            a leap year or not (using the rule that a year is a leap year if it is divisible by 4 but not divisible by
+            100, unless it is also divisible by 400).</li>
+
+        var products = [
+        { name: "Apple", price: 50 },
+        { name: "Banana", price: 60 },
+        { name: "Orange", price: 40 },
+        ];
+
+        var newProduce = [];
+        products.forEach(function (item) {
+        var newItem = {};
+        newItem.name = "Organic " + item.name;
+        newItem.price = item.price;
+        newItem.discountPrice = item.price - 0.1 * item.price;
+        newProduce.push(newItem);
+        });
+        console.log(products);
+        console.log(newProduce);
+        </li>
+    </ol>
+</body>
+
+</html>
