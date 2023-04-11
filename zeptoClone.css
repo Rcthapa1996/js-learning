@@ -114,7 +114,8 @@ li button {
 }
 
 .card {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  max-width: 200px;
   border: solid #ddd;
   padding: 10px;
   /* border-radius: 10px; */
